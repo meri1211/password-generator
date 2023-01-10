@@ -93,8 +93,17 @@ var specialCharacters = [
    let bigArray = [];
   
   // Function to prompt user for password options
-  function getPasswordOptions() {
-  
+    function getPasswordOptions() {
+    // Created a prompt to ask the user about the length of the password  and stored it in a variable.
+      let lengthOfPassword = prompt("How many characters should your password have? Min 10- Max 64");
+
+        if (lengthOfPassword < 10) {
+        alert("Password must be at least 10 characters long!");
+      
+       }else if (lengthOfPassword > 64) {
+       alert("Password cannot be longer than 64 characters!")
+    }
+      console.log(lengthOfPassword);
   }
   
   // Function for getting a random element from an array
