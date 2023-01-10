@@ -153,10 +153,11 @@ getPasswordOptions();
 
 // Function for getting a random element from an array
 function getRandom(arr) {
+  // Using the Math.random() function to generate a random index number from the big array.
   let randomIndex = Math.floor(Math.random()*bigArray.length);
     for (let i = 0; i < bigArray.length; i++) {
       const index = bigArray[i];
-      return randomIndex;
+      return index;
     }
 }
 
