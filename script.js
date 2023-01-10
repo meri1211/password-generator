@@ -87,6 +87,10 @@ var specialCharacters = [
     'Y',
     'Z'
   ];
+
+
+  // Declared an array that concatenates the choices of the user for each combination of choices.
+   let bigArray = [];
   
   // Function to prompt user for password options
   function getPasswordOptions() {
