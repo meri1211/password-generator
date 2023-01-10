@@ -132,7 +132,18 @@ function getPasswordOptions() {
   ) {
     alert("Must choose at least one character type!");
   }
-}
+
+  // Created an object of the options the user chooses, that we can access with the dot notation.
+  let userPasswordOptions = {
+    length: lengthOfPassword,
+    specialCharacters: hasSpecialChar,
+    containsNumbers: hasNumbers, 
+    lowercase: hasLowerCase, 
+    uppercase: hasUpperCase
+  };
+  
+};
+console.log(userPasswordOptions);
 
 // Function for getting a random element from an array
 function getRandom(arr) {}
